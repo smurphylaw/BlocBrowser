@@ -19,6 +19,7 @@
 		0DE8186A19A2A54D0030DCAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE8185219A2A54D0030DCAE /* UIKit.framework */; };
 		0DE8187219A2A54D0030DCAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DE8187019A2A54D0030DCAE /* InfoPlist.strings */; };
 		0DE8187419A2A54D0030DCAE /* BlocBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8187319A2A54D0030DCAE /* BlocBrowserTests.m */; };
+		0DE8187F19A2A6700030DCAE /* BLCWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8187E19A2A6700030DCAE /* BLCWebBrowserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		0DE8186F19A2A54D0030DCAE /* BlocBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlocBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		0DE8187119A2A54D0030DCAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0DE8187319A2A54D0030DCAE /* BlocBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocBrowserTests.m; sourceTree = "<group>"; };
+		0DE8187D19A2A6700030DCAE /* BLCWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCWebBrowserViewController.h; sourceTree = "<group>"; };
+		0DE8187E19A2A6700030DCAE /* BLCWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCWebBrowserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		0DE8185419A2A54D0030DCAE /* BlocBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				0DE8187D19A2A6700030DCAE /* BLCWebBrowserViewController.h */,
+				0DE8187E19A2A6700030DCAE /* BLCWebBrowserViewController.m */,
 				0DE8185D19A2A54D0030DCAE /* BLCAppDelegate.h */,
 				0DE8185E19A2A54D0030DCAE /* BLCAppDelegate.m */,
 				0DE8186019A2A54D0030DCAE /* Images.xcassets */,
@@ -242,6 +247,7 @@
 			files = (
 				0DE8185F19A2A54D0030DCAE /* BLCAppDelegate.m in Sources */,
 				0DE8185B19A2A54D0030DCAE /* main.m in Sources */,
+				0DE8187F19A2A6700030DCAE /* BLCWebBrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
