@@ -20,6 +20,7 @@
 		0DE8187219A2A54D0030DCAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DE8187019A2A54D0030DCAE /* InfoPlist.strings */; };
 		0DE8187419A2A54D0030DCAE /* BlocBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8187319A2A54D0030DCAE /* BlocBrowserTests.m */; };
 		0DE8187F19A2A6700030DCAE /* BLCWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8187E19A2A6700030DCAE /* BLCWebBrowserViewController.m */; };
+		0DE8188219A3E6BD0030DCAE /* BLCAwesomeFloatingToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8188119A3E6BD0030DCAE /* BLCAwesomeFloatingToolbar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0DE8187319A2A54D0030DCAE /* BlocBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocBrowserTests.m; sourceTree = "<group>"; };
 		0DE8187D19A2A6700030DCAE /* BLCWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCWebBrowserViewController.h; sourceTree = "<group>"; };
 		0DE8187E19A2A6700030DCAE /* BLCWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCWebBrowserViewController.m; sourceTree = "<group>"; };
+		0DE8188019A3E6BD0030DCAE /* BLCAwesomeFloatingToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCAwesomeFloatingToolbar.h; sourceTree = "<group>"; };
+		0DE8188119A3E6BD0030DCAE /* BLCAwesomeFloatingToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCAwesomeFloatingToolbar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				0DE8187E19A2A6700030DCAE /* BLCWebBrowserViewController.m */,
 				0DE8185D19A2A54D0030DCAE /* BLCAppDelegate.h */,
 				0DE8185E19A2A54D0030DCAE /* BLCAppDelegate.m */,
+				0DE8188019A3E6BD0030DCAE /* BLCAwesomeFloatingToolbar.h */,
+				0DE8188119A3E6BD0030DCAE /* BLCAwesomeFloatingToolbar.m */,
 				0DE8186019A2A54D0030DCAE /* Images.xcassets */,
 				0DE8185519A2A54D0030DCAE /* Supporting Files */,
 			);
@@ -248,6 +253,7 @@
 				0DE8185F19A2A54D0030DCAE /* BLCAppDelegate.m in Sources */,
 				0DE8185B19A2A54D0030DCAE /* main.m in Sources */,
 				0DE8187F19A2A6700030DCAE /* BLCWebBrowserViewController.m in Sources */,
+				0DE8188219A3E6BD0030DCAE /* BLCAwesomeFloatingToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
