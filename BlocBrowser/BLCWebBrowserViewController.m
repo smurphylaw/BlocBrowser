@@ -49,7 +49,7 @@
     
     // Buttons
     self.awesomeToolbar = [[BLCAwesomeFloatingToolbar alloc] initWithFourTitles:@[kBLCWebBrowserBackString, kBLCWebBrowserForwardString, kBLCWebBrowserRefreshString, kBLCWebBrowserStopString]];
-    self.awesomeToolbar.delegate = self;
+    self.awesomeToolbar.delegate = self; // We set the delegate of awesomeToolbar to be ourself
     
     
     for (UIView *viewToAdd in @[self.webview, self.textField, self.awesomeToolbar]) {
@@ -186,6 +186,8 @@
 
 #pragma mark - BLCAwesomeFloatingToolbarDelegate
 
+// And implement the delegate methods here
+
 -(void) floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didSelectButtonWithTitle:(NSString *)title {
     if ([title isEqual:kBLCWebBrowserBackString]) {
         [self.webview goBack];
@@ -195,6 +197,17 @@
         [self.webview stopLoading];
     } else if ([title isEqual:kBLCWebBrowserRefreshString]) {
         [self.webview reload];
+    }
+}
+
+- (void) floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didTryToPanWithOffset:(CGPoint)offset {
+    CGPoint startingPoint = toolbar.frame.origin;
+    CGPoint newPoint = CGPointMake(startingPoint.x + offset.x, startingPoint.y + offset.y);
+    
+    CGRect potentialNewFrame = CGRectMake(newPoint.x, newPoint.y, CGRectGetWidth(toolbar.frame), CGRectGetHeight(toolbar.frame));
+    
+    if (CGRectContainsRect(self.view.bounds, potentialNewFrame)) {
+        toolbar.frame = potentialNewFrame;
     }
 }
 
